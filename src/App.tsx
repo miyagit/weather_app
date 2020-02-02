@@ -7,7 +7,7 @@ const App = () => {
   return (
     <div className="App">
       <Search />
-      <WeatherList />>
+      <WeatherList />
     </div>
   );
 }
