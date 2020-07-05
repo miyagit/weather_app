@@ -1,22 +1,13 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Search from './components/Search/Search'
 import WeatherList from './components/Wether/WeatherList'
 import './App.css';
 
-type State = {
-  data: Month | []
-}
-
-type Props = {
-
-}
-
-const App: React.FC<Props> = prps => {
-  const [state, setState] = useState<State>({ data: [] })
+const App = () => {
   return (
     <div className="App">
       <Search />
-      <WeatherList data={state.data} />
+      <WeatherList />
     </div>
   );
 }
